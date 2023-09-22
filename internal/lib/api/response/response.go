@@ -18,7 +18,7 @@ const (
 	StatusError = "Error"
 )
 
-// Function-wrapper for convert regular error to struct
+// New is function-wrapper for convert regular error to struct
 func Error(msg string) Response {
 	return Response{
 		Status: StatusError,
@@ -26,14 +26,14 @@ func Error(msg string) Response {
 	}
 }
 
-// Returns string "OK" as struct for convert to JSON
+// OK is func for return string "OK" as struct for convert to JSON
 func OK() Response {
 	return Response{
 		Status: StatusOK,
 	}
 }
 
-// Returns human-readable list of errors from validator errors
+// ValidationError is func for return human-readable list of errors from validator errors
 func ValidationError(errs validator.ValidationErrors) Response {
 	var errMsgs []string
 

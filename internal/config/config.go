@@ -26,7 +26,7 @@ type HTTPServer struct {
 	Password string `yaml:"password" env-default:"password"`
 }
 
-// Load application configuration from file
+// MustLoad is func for load application configuration from file
 func MustLoad() *Config {
 	configPath := os.Getenv("CONFIG_PATH")
 	if configPath == "" {

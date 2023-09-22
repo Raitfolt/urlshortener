@@ -6,7 +6,7 @@ import (
 	"golang.org/x/exp/slog"
 )
 
-// Create new DiscardLogger
+// NewDiscardLogger create new DiscardLogger
 func NewDiscardLogger() *slog.Logger {
 	return slog.New(NewDiscardHandler())
 }
