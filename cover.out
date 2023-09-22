@@ -1,0 +1,16 @@
+mode: count
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:36.64,37.54 1 1
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:37.54,48.29 5 1
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:48.29,52.4 3 0
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:53.3,53.17 1 1
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:53.17,57.4 3 0
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:58.3,60.53 2 1
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:60.53,68.4 4 0
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:69.3,70.18 2 1
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:70.18,72.4 1 0
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:74.3,75.43 2 1
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:75.43,81.4 3 0
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:82.3,82.17 1 1
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:82.17,88.4 3 0
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:90.3,92.26 2 1
+github.com/Raitfolt/urlshortener/internal/http-server/middleware/logger/handlers/save/save.go:96.71,101.2 1 1
