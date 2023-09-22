@@ -9,10 +9,12 @@ import (
 	"github.com/mattn/go-sqlite3"
 )
 
+// DB pool
 type Storage struct {
 	db *sql.DB
 }
 
+// Init new storage or return old if exists
 func New(storagePath string) (*Storage, error) {
 	const op = "storage.sqlite.NewStorage"
 
@@ -40,6 +42,7 @@ func New(storagePath string) (*Storage, error) {
 	return &Storage{db: db}, nil
 }
 
+// Save URL and his alias in storage
 func (s *Storage) SaveURL(urlToSave string, alias string) (int64, error) {
 	const op = "storage.sqlit.SaveURL"
 
@@ -65,6 +68,7 @@ func (s *Storage) SaveURL(urlToSave string, alias string) (int64, error) {
 	return id, nil
 }
 
+// Returns URL from storage by alias
 func (s *Storage) GetURL(alias string) (string, error) {
 	const op = "storage.sqlite.GetURL"
 

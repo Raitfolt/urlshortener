@@ -7,6 +7,7 @@ import (
 	"github.com/go-playground/validator"
 )
 
+// Response save data from server
 type Response struct {
 	Status string `json:"status"`
 	Error  string `json:"error,omitempty"`
@@ -17,6 +18,7 @@ const (
 	StatusError = "Error"
 )
 
+// Function-wrapper for convert regular error to struct
 func Error(msg string) Response {
 	return Response{
 		Status: StatusError,
@@ -24,12 +26,14 @@ func Error(msg string) Response {
 	}
 }
 
+// Returns string "OK" as struct for convert to JSON
 func OK() Response {
 	return Response{
 		Status: StatusOK,
 	}
 }
 
+// Returns human-readable list of errors from validator errors
 func ValidationError(errs validator.ValidationErrors) Response {
 	var errMsgs []string
 

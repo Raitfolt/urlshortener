@@ -8,12 +8,14 @@ import (
 	"github.com/ilyakaznacheev/cleanenv"
 )
 
+// Config contains main variables of applications
 type Config struct {
 	Env         string `yaml:"env" env-default:"development"`
 	StoragePath string `yaml:"storage_path" env-required:"true"`
 	HTTPServer  `yaml:"http_server"`
 }
 
+// HTTPServer is config for http-server
 type HTTPServer struct {
 	Address     string        `yaml:"address" env-default:"0.0.0.0:8082"`
 	Timeout     time.Duration `yaml:"timeout" env-default:"5s"`
@@ -24,6 +26,7 @@ type HTTPServer struct {
 	Password string `yaml:"password" env-default:"password"`
 }
 
+// Load application configuration from file
 func MustLoad() *Config {
 	configPath := os.Getenv("CONFIG_PATH")
 	if configPath == "" {
