@@ -14,10 +14,10 @@ type Response struct {
 }
 
 const (
-	// String for OK status
+	// StatusOK is string for OK status
 	StatusOK = "OK"
 
-	// String for Error status
+	// StatusError is string for Error status
 	StatusError = "Error"
 )
 
