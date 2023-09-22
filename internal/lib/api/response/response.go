@@ -14,11 +14,14 @@ type Response struct {
 }
 
 const (
-	StatusOK    = "OK"
+	// String for OK status
+	StatusOK = "OK"
+
+	// String for Error status
 	StatusError = "Error"
 )
 
-// New is function-wrapper for convert regular error to struct
+// Error is function-wrapper for convert regular error to struct
 func Error(msg string) Response {
 	return Response{
 		Status: StatusError,

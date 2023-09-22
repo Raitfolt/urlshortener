@@ -11,30 +11,30 @@ func NewDiscardLogger() *slog.Logger {
 	return slog.New(NewDiscardHandler())
 }
 
-// Type for DiscartLogger
+// DiscardHandler is type for handle DiscartLogger
 type DiscardHandler struct{}
 
-// New handler for DiscardLogger
+// NewDiscardHandler returns handler for DiscardLogger
 func NewDiscardHandler() *DiscardHandler {
 	return &DiscardHandler{}
 }
 
-// Stub
+// Handle return nil
 func (h *DiscardHandler) Handle(_ context.Context, _ slog.Record) error {
 	return nil
 }
 
-// Stub
+// WithAttrs return handler of DiscardHandler
 func (h *DiscardHandler) WithAttrs(_ []slog.Attr) slog.Handler {
 	return h
 }
 
-// Stub
+// WithGroup return handler of DiscardHandler
 func (h *DiscardHandler) WithGroup(_ string) slog.Handler {
 	return h
 }
 
-// Stub
+// Enabled return false
 func (h *DiscardHandler) Enabled(_ context.Context, _ slog.Level) bool {
 	return false
 }
